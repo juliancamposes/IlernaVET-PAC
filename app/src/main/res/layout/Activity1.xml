@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity1"
-    >
+    tools:context=".Activity1">
 
     <!--GuideLines -->
     <androidx.constraintlayout.widget.Guideline
@@ -13,111 +12,118 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.95"/>
+        app:layout_constraintGuide_percent="0.95" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_horizontal_55"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.55"
-        />
+        app:layout_constraintGuide_percent="0.55" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_horizontal_40"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4"/>
+        app:layout_constraintGuide_percent="0.4" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_vertical_10"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1"/>
+        app:layout_constraintGuide_percent="0.1" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_vertical_25"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.25"/>
+        app:layout_constraintGuide_percent="0.25" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_vertical_36"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.36"/>
+        app:layout_constraintGuide_percent="0.36" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_vertical_62"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.62"/>
+        app:layout_constraintGuide_percent="0.62" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_vertical_80"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.8"/>
+        app:layout_constraintGuide_percent="0.8" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_vertical_90"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9"/>
+        app:layout_constraintGuide_percent="0.9" />
 
     <!--Buttons-->
     <Button
         android:id="@+id/activity1_go_activity2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/go_activity2"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@id/guide_horizontal_95"
-        app:layout_constraintStart_toEndOf="@id/guide_vertical_10"
 
-        android:hint="@string/go_activity2"/>
+        app:layout_constraintStart_toEndOf="@id/guide_vertical_10" />
 
     <Button
         android:id="@+id/activity1_go_activity3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/go_activity3"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@id/guide_horizontal_95"
-        app:layout_constraintEnd_toStartOf="@id/guide_vertical_62"
-        android:hint="@string/go_activity3"/>
+        app:layout_constraintEnd_toStartOf="@id/guide_vertical_62" />
 
     <Button
         android:id="@+id/activity1_go_activity4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/go_activity4"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@id/guide_horizontal_95"
-        app:layout_constraintEnd_toStartOf="@id/guide_vertical_90"
-        android:hint="@string/go_activity4"/>
+        app:layout_constraintEnd_toStartOf="@id/guide_vertical_90" />
 
     <Button
         android:id="@+id/activity1_play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/play_music"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@id/guide_horizontal_55"
-        app:layout_constraintStart_toEndOf="@id/guide_vertical_25"
-        android:hint="@string/play_music"
-        />
+        app:layout_constraintStart_toEndOf="@id/guide_vertical_25" />
+
     <Button
         android:id="@+id/activity1_stop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/stop_music"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@id/guide_horizontal_55"
-        app:layout_constraintEnd_toStartOf="@id/guide_vertical_80"
-        android:hint="@string/stop_music"
-        />
+        app:layout_constraintEnd_toStartOf="@id/guide_vertical_80" />
 
     <ImageView
         android:layout_width="251dp"
         android:layout_height="215dp"
+        android:contentDescription="@string/image_logo_descripcion"
         app:layout_constraintBottom_toTopOf="@id/guide_horizontal_40"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:src="@mipmap/ilerna_vet_logo_foreground"
-        android:contentDescription="@string/image_logo_descripcion"/>
+        tools:src="@mipmap/ilerna_vet_logo_foreground" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
