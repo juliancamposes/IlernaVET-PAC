@@ -16,11 +16,15 @@ class Activity1 : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+
+        //Creacion del binding para los botones
         binding = Activity1Binding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
+        //Creacion del mediaPlayer para reproducir música
         val mediaPlayer = MediaPlayer.create(this,R.raw.audio1)
+
         //Boton para ir a la Actividad 2
         binding.activity1GoActivity2.setOnClickListener{
             val intent = Intent(this,Activity2::class.java)
