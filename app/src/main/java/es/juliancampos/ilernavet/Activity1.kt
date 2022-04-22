@@ -1,6 +1,7 @@
 package es.juliancampos.ilernavet
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import es.juliancampos.ilernavet.databinding.Activity1Binding
@@ -10,6 +11,7 @@ class Activity1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.Activity1)
+
     }
 
     override fun onResume() {
@@ -18,6 +20,7 @@ class Activity1 : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        val mediaPlayer = MediaPlayer.create(this,R.raw.audio1)
         //Boton para ir a la Actividad 2
         binding.activity1GoActivity2.setOnClickListener{
             val intent = Intent(this,Activity2::class.java)
@@ -39,14 +42,14 @@ class Activity1 : AppCompatActivity() {
             finish()
         }
 
-        //Boton para reproducir músicad
+        //Boton para reproducir música
         binding.activity1Play.setOnClickListener{
-            //código
+            mediaPlayer.start()
         }
 
         //Boton para parar música
         binding.activity1Stop.setOnClickListener{
-            //código
+            mediaPlayer.stop()
         }
     }
 }
