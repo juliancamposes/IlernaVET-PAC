@@ -5,4 +5,5 @@
     <string name="go_activity4">Activity4</string>
     <string name="play_music">Play</string>
     <string name="stop_music">Stop</string>
+    <string name="image_logo_descripcion">Logo de la veterinaria</string>
 </resources>

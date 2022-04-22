@@ -118,5 +118,6 @@
         app:layout_constraintBottom_toTopOf="@id/guide_horizontal_40"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:src="@mipmap/ilerna_vet_logo_foreground" />
+        tools:src="@mipmap/ilerna_vet_logo_foreground"
+        android:contentDescription="@string/image_logo_descripcion"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
