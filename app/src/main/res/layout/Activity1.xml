@@ -69,6 +69,7 @@
         android:id="@+id/activity1_go_activity2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@id/guide_horizontal_95"
         app:layout_constraintStart_toEndOf="@id/guide_vertical_10"
 
@@ -78,6 +79,7 @@
         android:id="@+id/activity1_go_activity3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@id/guide_horizontal_95"
         app:layout_constraintEnd_toStartOf="@id/guide_vertical_62"
         android:hint="@string/go_activity3"/>
@@ -86,6 +88,7 @@
         android:id="@+id/activity1_go_activity4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@id/guide_horizontal_95"
         app:layout_constraintEnd_toStartOf="@id/guide_vertical_90"
         android:hint="@string/go_activity4"/>
@@ -94,6 +97,7 @@
         android:id="@+id/activity1_play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@id/guide_horizontal_55"
         app:layout_constraintStart_toEndOf="@id/guide_vertical_25"
         android:hint="@string/play_music"
@@ -102,6 +106,7 @@
         android:id="@+id/activity1_stop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@id/guide_horizontal_55"
         app:layout_constraintEnd_toStartOf="@id/guide_vertical_80"
         android:hint="@string/stop_music"
